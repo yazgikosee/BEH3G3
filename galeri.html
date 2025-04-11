@@ -15,21 +15,21 @@
 </head>
 <body>
     <div class="container">
-        <div class="row mt-2 gy-4">
-            <div class="col-12 col-sm-6 col-md-4 col-lg-2"> <img src="https://picsum.photos/id/237/200/300" alt=""></div>
-            <div class="col-12 col-sm-6 col-md-4 col-lg-2"> <img src="https://picsum.photos/id/247/200/300" alt=""></div>
-            <div class="col-12 col-sm-6 col-md-4 col-lg-2"> <img src="https://picsum.photos/id/257/200/300" alt=""></div>
-            <div class="col-12 col-sm-6 col-md-4 col-lg-2"> <img src="https://picsum.photos/id/267/200/300" alt=""></div>
-            <div class="col-12 col-sm-6 col-md-4 col-lg-2"> <img src="https://picsum.photos/id/287/200/300" alt=""></div>
-            <div class="col-12 col-sm-6 col-md-4 col-lg-2"> <img src="https://picsum.photos/id/297/200/300" alt=""></div>
+        <div class="row mt-2 gy-4"> 
+            <div class="col-12 col-sm-6 col-md-4 col-lg-2"> <img src="https://picsum.photos/id/237/600/900" alt="" onclick="ModalGoster(this.src)" ></div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-2"> <img src="https://picsum.photos/id/247/600/900" alt="" onclick="ModalGoster(this.src)"></div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-2"> <img src="https://picsum.photos/id/257/600/900" alt="" onclick="ModalGoster(this.src)"></div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-2"> <img src="https://picsum.photos/id/267/600/900" alt="" onclick="ModalGoster(this.src)"></div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-2"> <img src="https://picsum.photos/id/287/600/900" alt="" onclick="ModalGoster(this.src)"></div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-2"> <img src="https://picsum.photos/id/297/600/900" alt="" onclick="ModalGoster(this.src)"></div>
         </div>
         <div class="row mt-2 gy-4">
-            <div class="col-12 col-sm-6 col-md-4 col-lg-2"> <img src="https://picsum.photos/id/227/200/300" alt=""></div>
-            <div class="col-12 col-sm-6 col-md-4 col-lg-2"> <img src="https://picsum.photos/id/217/200/300" alt=""></div>
-            <div class="col-12 col-sm-6 col-md-4 col-lg-2"> <img src="https://picsum.photos/id/275/200/300" alt=""></div>
-            <div class="col-12 col-sm-6 col-md-4 col-lg-2"> <img src="https://picsum.photos/id/269/200/300" alt=""></div>
-            <div class="col-12 col-sm-6 col-md-4 col-lg-2"> <img src="https://picsum.photos/id/284/200/300" alt=""></div>
-            <div class="col-12 col-sm-6 col-md-4 col-lg-2"> <img src="https://picsum.photos/id/293/200/300" alt=""></div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-2"> <img src="https://picsum.photos/id/227/600/900" alt="" onclick="ModalGoster(this.src)"></div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-2"> <img src="https://picsum.photos/id/217/600/900" alt="" onclick="ModalGoster(this.src)"></div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-2"> <img src="https://picsum.photos/id/275/600/900" alt="" onclick="ModalGoster(this.src)"></div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-2"> <img src="https://picsum.photos/id/269/600/900" alt="" onclick="ModalGoster(this.src)"></div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-2"> <img src="https://picsum.photos/id/284/600/900" alt="" onclick="ModalGoster(this.src)"></div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-2"> <img src="https://picsum.photos/id/293/600/900" alt="" onclick="ModalGoster(this.src)"></div>
         </div>
         
     </div>
@@ -38,18 +38,19 @@
          <div class="modal-dialog modal-dialog-centered modal-lg">
             <div class="modal-content">
                 <div class="modal-body text-center">
-              <img id="modalResim" src="" alt="Büyük Resim" class="rounded mx-auto d-block">
+              <img id="modalResim" src="" alt="Büyük Resim" class="img-fluid rounded">
                </div>
             </div>
         </div>
   </div> 
   <script>
     function ModalGoster(urlResim){
-        const modalResim = document.getElementById(modalResim);
-        modalResim.src= urlResim;
-        const myModal = new bootstrap.Modal(document.getElementById('resimModal')); 
-        myModal.show();
-    }
+    const modalResim = document.getElementById("modalResim"); 
+    modalResim.src = urlResim;  
+    const myModal = new bootstrap.Modal(document.getElementById('resimModal')); 
+    myModal.show(); 
+}
+
   </script>  
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
 </body>
