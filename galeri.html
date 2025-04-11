@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FotoGaleri</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        img {
+          cursor: pointer;
+          width: 100%;
+          border-radius: 8px;
+        }
+      </style>
 </head>
 <body>
     <div class="container">
@@ -24,8 +31,20 @@
             <div class="col-12 col-sm-6 col-md-4 col-lg-2"> <img src="https://picsum.photos/id/284/200/300" alt=""></div>
             <div class="col-12 col-sm-6 col-md-4 col-lg-2"> <img src="https://picsum.photos/id/293/200/300" alt=""></div>
         </div>
+        
     </div>
-
+    <!-- Modal -->
+    <div class="modal fade" id="resimModal" tabindex="-1" aria-labelledby="resimModalLabel" aria-hidden="true">
+         <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-body text-center">
+              <img id="modalResim" src="" alt="Büyük Resim" class="rounded mx-auto d-block">
+               </div>
+            </div>
+        </div>
+  </div> 
+    
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
